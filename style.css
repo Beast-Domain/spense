@@ -7,7 +7,7 @@
 }
 header {
     text-align: center;
-    background-color: black;
+    background-color: #000000;
     color: white;
     padding: 0.75rem 0;
     font-size: 1rem;
@@ -17,24 +17,99 @@ header span {
     font-size: 1.25rem;
 }
 header a {
-    color: white;
+    color: #ffffff;
+}
+main {
+    background-color: #f0eeeb;
+}
+.container {
+    margin: 0 8rem;
+}
+.container.banner {
+    padding: 3rem 0;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navLinkWrapper {
+    display: flex;
+}
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navList .navItem {
+    font-weight: 600;
+    cursor: pointer;
+}
+.navList .navItem:not(:first-child) {
+    margin-left: 1.5rem;
+}
+.buttonGroup button {
+    cursor: pointer;
+}
+.buttonGroup .buttonLogin {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+.buttonGroup .buttonStart {
+    background-color: #000000;
+    font-weight: 600;
+    padding: 0.9375rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 6px;
+}
+.navBar .menu {
+    display: none;
 }
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
+    }
+    .container {
+        margin: 0 6rem;
     }
 }
 @media screen and (max-width: 992px) {
     header {
         padding: 0.75rem 1.75rem;
     }
+    .container {
+        margin: 0 2rem;
+    }
+    .navBar {
+        justify-content: space-around;
+    }
+    .navBar .navList {
+        margin-left: 6rem;
+    }
+    .navBar .buttonGroup {
+        margin-left: 1rem;
+    }
 }
-@media screen and (max-width: 425px) {
-
+@media screen and (max-width: 700px) {
+    .navBar {
+        justify-content: space-between;
+    }
+    .navBar .navList,
+    .navBar .buttonGroup {
+        display: none;
+    }
+    .navBar .menu {
+        display: block;
+    }
 }
 @media screen and (max-width: 375px) {
     header {
-        padding: 0.75rem 1.75rem;
         font-size: 0.875rem;
     }
     header span {
