@@ -49,6 +49,9 @@ main {
 .navList .navItem:not(:first-child) {
     margin-left: 1.5rem;
 }
+.buttonGroup button {
+    cursor: pointer;
+}
 .buttonGroup .buttonLogin {
     border: none;
     background-color: transparent;
