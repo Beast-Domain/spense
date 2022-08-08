@@ -31,6 +31,7 @@ main {
 .navBar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .navLinkWrapper {
     display: flex;
@@ -47,6 +48,13 @@ main {
 }
 .navList .navItem:not(:first-child) {
     margin-left: 1.5rem;
+}
+.buttonGroup .buttonLogin {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1rem;
 }
 @media screen and (max-width: 1200px) {
     header {
