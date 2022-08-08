@@ -68,18 +68,45 @@ main {
     color: #ffffff;
     border-radius: 6px;
 }
+.navBar .menu {
+    display: none;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
+    }
+    .container {
+        margin: 0 6rem;
     }
 }
 @media screen and (max-width: 992px) {
     header {
         padding: 0.75rem 1.75rem;
     }
+    .container {
+        margin: 0 2rem;
+    }
+    .navBar {
+        justify-content: space-around;
+    }
+    .navBar .navList {
+        margin-left: 6rem;
+    }
+    .navBar .buttonGroup {
+        margin-left: 1rem;
+    }
 }
-@media screen and (max-width: 425px) {
-
+@media screen and (max-width: 700px) {
+    .navBar {
+        justify-content: space-between;
+    }
+    .navBar .navList,
+    .navBar .buttonGroup {
+        display: none;
+    }
+    .navBar .menu {
+        display: block;
+    }
 }
 @media screen and (max-width: 375px) {
     header {
