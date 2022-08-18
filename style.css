@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;500;600;700;800&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Cabin', 'Open Sans', sans-serif;
 }
 header {
     text-align: center;
@@ -73,6 +74,9 @@ main {
 }
 .detailWrapper {
     margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .heroImage {
     display: none;
@@ -80,6 +84,53 @@ main {
 }
 .heroImage.desktop {
     display: block;
+    max-width: 26rem;
+}
+.detailMain {
+    margin-right: 6rem;
+}
+.detailMain .detailHeading {
+    font-size: 3.5rem;
+}
+.detailMain .detailDescription {
+    font-size: 1.15rem;
+    color: #777267;
+    margin-top: 0.5rem;
+    line-height: 1.75rem;
+}
+.detailMain .detailBenefitList {
+    margin-top: 1.25rem;
+    list-style: none;
+}
+.detailBenefitList .detailBenefitListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.detailBenefitList span {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-left: 0.9375rem;
+}
+.detailBenefitListItem svg {
+    width: 20px;
+}
+.startForm {
+    margin-top: 2rem;
+}
+.startForm .emailInputBanner {
+    padding: 0.75rem 1.25rem;
+    width: 12rem;
+    font-size: 1rem;
+}
+.startForm button {
+    background-color: #000000;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 6px;
+    margin-left: 0.625rem;
 }
 @media screen and (max-width: 1200px) {
     header {
@@ -87,6 +138,21 @@ main {
     }
     .container {
         margin: 0 6rem;
+    }
+    .detailMain {
+        margin-right: 4rem;
+    }
+    .heroImage.desktop {
+        max-width: 20rem;
+    }
+    .detailMain .detailHeading {
+        font-size: 2.5rem;
+    }
+    .detailMain .detailDescription {
+        font-size: 1rem;
+    }
+    .detailBenefitList span {
+        font-size: 1.05rem;
     }
 }
 @media screen and (max-width: 992px) {
