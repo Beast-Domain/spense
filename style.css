@@ -135,6 +135,26 @@ main {
 .navBar .logo {
     font-size: 1.325rem;
 }
+.content {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+.partnersList {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.partnersList {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.partnersList .partnersListItem {
+    margin-left: 1.75rem;
+}
+.partnersListItem .partnersLogo {
+    width: 100%;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
@@ -156,6 +176,10 @@ main {
     }
     .detailBenefitList span {
         font-size: 1.05rem;
+    }
+    .partnersListItem .partnersLogo {
+        width: auto;
+        max-width: 8rem;
     }
 }
 @media screen and (max-width: 992px) {
@@ -193,6 +217,9 @@ main {
     .detailMain .detailHeading {
         font-size: 3rem;
     }
+    .partnersListItem .partnersLogo {
+        max-width: 7rem;
+    }
 }
 @media screen and (max-width: 700px) {
     .container {
@@ -223,6 +250,12 @@ main {
     .detailBenefitList span {
         font-size: 1rem;
         margin-left: 0.75rem;
+    }
+    .partnersListItem .partnersLogo {
+        max-width: 6rem;
+    }
+    .partnersList .partnersListItem {
+        margin-left: 1.25rem;
     }
 }
 @media screen and (max-width: 375px) {
