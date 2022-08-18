@@ -143,6 +143,10 @@ main {
     display: flex;
     align-items: center;
     overflow-x: scroll;
+    scrollbar-width: none;
+}
+.partnersList::-webkit-scrollbar {
+    display: none;
 }
 .partnersList {
     margin-bottom: 0;
