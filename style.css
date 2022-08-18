@@ -132,6 +132,9 @@ main {
     border-radius: 6px;
     margin-left: 0.625rem;
 }
+.navBar .logo {
+    font-size: 1.325rem;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
@@ -162,9 +165,6 @@ main {
     .container {
         margin: 0 2rem;
     }
-    .navBar {
-        justify-content: space-around;
-    }
     .navBar .navList {
         margin-left: 6rem;
     }
@@ -177,8 +177,27 @@ main {
     .heroImage.tablet {
         display: block;
     }
+    .detailWrapper {
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+    }
+    .detailMain {
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+    .navList .navItem,
+    .buttonGroup .buttonLogin,
+    .buttonGroup .buttonStart {
+        font-size: 1.05rem;
+    }
+    .detailMain .detailHeading {
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 700px) {
+    .container {
+        margin: 0 1.5rem;
+    }
     .navBar {
         justify-content: space-between;
     }
@@ -195,6 +214,16 @@ main {
     .heroImage.mobile {
         display: block;
     }
+    .detailMain .detailHeading {
+        font-size: 2rem;
+    }
+    .detailMain .detailDescription {
+        font-size: 1rem;
+    }
+    .detailBenefitList span {
+        font-size: 1rem;
+        margin-left: 0.75rem;
+    }
 }
 @media screen and (max-width: 375px) {
     header {
@@ -202,6 +231,23 @@ main {
     }
     header span {
         font-size: 1.15rem;
+    }
+    .detailMain .detailHeading {
+        font-size: 1.75rem;
+    }
+    .detailMain .detailDescription {
+        font-size: 0.875rem;
+    }
+    .detailBenefitList span {
+        font-size: 0.875rem;
+    }
+    .startForm .emailInputBanner {
+        padding: 0.75rem;
+        width: 10rem;
+    }
+    .startForm button {
+        padding: 0.75rem;
+        font-size: 0.875rem;
     }
 }
 @media screen and (max-width: 325px) {
