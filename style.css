@@ -177,6 +177,10 @@ main {
     .detailBenefitList span {
         font-size: 1.05rem;
     }
+    .partnersListItem .partnersLogo {
+        width: auto;
+        max-width: 8rem;
+    }
 }
 @media screen and (max-width: 992px) {
     header {
@@ -213,6 +217,9 @@ main {
     .detailMain .detailHeading {
         font-size: 3rem;
     }
+    .partnersListItem .partnersLogo {
+        max-width: 7rem;
+    }
 }
 @media screen and (max-width: 700px) {
     .container {
@@ -243,6 +250,12 @@ main {
     .detailBenefitList span {
         font-size: 1rem;
         margin-left: 0.75rem;
+    }
+    .partnersListItem .partnersLogo {
+        max-width: 6rem;
+    }
+    .partnersList .partnersListItem {
+        margin-left: 1.25rem;
     }
 }
 @media screen and (max-width: 375px) {
