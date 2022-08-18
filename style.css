@@ -135,6 +135,26 @@ main {
 .navBar .logo {
     font-size: 1.325rem;
 }
+.content {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+.partnersList {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.partnersList {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.partnersList .partnersListItem {
+    margin-left: 1.75rem;
+}
+.partnersListItem .partnersLogo {
+    width: 100%;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
