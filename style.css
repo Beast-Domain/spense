@@ -159,6 +159,43 @@ main {
 .partnersListItem .partnersLogo {
     width: 100%;
 }
+.escrow {
+    background-color: #f0eeeb;
+    border-radius: 12px;
+}
+.phoneMockup {
+    display: none;
+    width: 100%;
+}
+.phoneMockup.desktop {
+    display: block;
+}
+.escrow {
+    margin-top: 3rem;
+    position: relative;
+    padding: 0 0 0 4rem;
+    display: flex;
+    align-items: center;
+}
+.escrowContentWrap {
+    position: absolute;
+    max-width: 30rem;
+}
+.escrowHeading {
+    font-size: 2.5rem;
+}
+.escrowDescription {
+    font-size: 1.15rem;
+    color: #777267;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+.escrowContentWrap .escrowLink {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
@@ -184,6 +221,18 @@ main {
     .partnersListItem .partnersLogo {
         width: auto;
         max-width: 8rem;
+    }
+    .escrowHeading {
+        font-size: 2rem;
+    }
+    .escrowDescription {
+        font-size: 1rem;
+    }
+    .escrowContentWrap .escrowLink {
+        font-size: 1.05rem;
+    }
+    .escrowContentWrap {
+        max-width: 24rem;
     }
 }
 @media screen and (max-width: 992px) {
@@ -219,10 +268,28 @@ main {
         font-size: 1.05rem;
     }
     .detailMain .detailHeading {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .partnersListItem .partnersLogo {
         max-width: 7rem;
+    }
+    .detailBenefitList span,
+    .detailMain .detailDescription {
+        font-size: 1.15rem;
+    }
+    .phoneMockup.desktop {
+        display: none;
+    }
+    .phoneMockup.tablet {
+        display: block;
+    }
+    .escrow {
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+    }
+    .escrowContentWrap {
+        position: static;
+        max-width: 30rem;
     }
 }
 @media screen and (max-width: 700px) {
@@ -261,6 +328,15 @@ main {
     .partnersList .partnersListItem {
         margin-left: 1.25rem;
     }
+    .phoneMockup.tablet {
+        display: none;
+    }
+    .phoneMockup.mobile {
+        display: block;
+    }
+    .escrowContentWrap {
+        padding: 0 3rem;
+    }
 }
 @media screen and (max-width: 375px) {
     header {
@@ -285,6 +361,9 @@ main {
     .startForm button {
         padding: 0.75rem;
         font-size: 0.875rem;
+    }
+    .escrowContentWrap {
+        padding: 0 2rem;
     }
 }
 @media screen and (max-width: 325px) {
