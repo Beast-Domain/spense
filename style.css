@@ -219,10 +219,14 @@ main {
         font-size: 1.05rem;
     }
     .detailMain .detailHeading {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .partnersListItem .partnersLogo {
         max-width: 7rem;
+    }
+    .detailBenefitList span,
+    .detailMain .detailDescription {
+        font-size: 1.15rem;
     }
 }
 @media screen and (max-width: 700px) {
