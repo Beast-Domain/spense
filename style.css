@@ -196,6 +196,35 @@ main {
     font-size: 1.25rem;
     font-weight: 600;
 }
+.editor {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.texteditor {
+    max-width: 40rem;
+}
+.editorContentWrap {
+    max-width: 30rem;
+}
+.editorHeading {
+    font-size: 2.5rem;
+}
+.editorDescription {
+    font-size: 1.15rem;
+    color: #777267;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.75rem;
+}
+.editorContentWrap .editorLink {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding: 0.75rem 0.75rem;
@@ -233,6 +262,22 @@ main {
     }
     .escrowContentWrap {
         max-width: 24rem;
+    }
+    .editorContentWrap {
+        max-width: 100%;
+    }
+    .texteditor {
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .editorHeading {
+        font-size: 2rem;
+    }
+    .editorDescription {
+        font-size: 1rem;
+    }
+    .editorContentWrap .editorLink {
+        font-size: 1.05rem;
     }
 }
 @media screen and (max-width: 992px) {
