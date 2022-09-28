@@ -19,17 +19,27 @@
             <nav class="navBar">
                 <h3 class="logo">spense.</h3>
                 <ul class="navList">
-                    <li class="navItem">Business</li>
-                    <li class="navItem">Pricing</li>
-                    <li class="navItem">Feature</li>
+                    <li class="navItem"><a href="#partners">Partners</a></li>
+                    <li class="navItem"><a href="#feature">Feature</a></li>
+                    <li class="navItem"><a href="#product">Product</a></li>
                 </ul>
                 <div class="buttonGroup">
-                    <button class="buttonLogin">Login</button>
-                    <button class="buttonStart">Get Started</button>
+                    <button class="buttonLogin" style="display: none;">Login</button>
+                    <a class="buttonStart" href="#footer">External Links</a>
                 </div>
-                <svg class="menu" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="black"/>
+                <svg id="menu" class="menu" width="2rem" height="2rem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g class="svg-menu-toggle">
+                        <path class="line line-1" d="M5 13h90v14H5z" fill="black"/>
+                        <path class="line line-2" d="M5 43h90v14H5z" fill="black"/>
+                        <path class="line line-3" d="M5 73h90v14H5z" fill="black"/>
+                    </g>
                 </svg>
+                <ul id="mobileNavList" class="mobileNavList">
+                    <li class="navItem"><a href="#partners">Partners</a></li>
+                    <li class="navItem"><a href="#feature">Feature</a></li>
+                    <li class="navItem"><a href="#product">Product</a></li>
+                    <li class="navItem"><a href="#footer">External Links</a></li>
+                </ul>
             </nav>
             <section class="detailWrapper">
                 <div class="detailMain">
@@ -67,7 +77,7 @@
         </section>
         <section class="content">
             <div class="container">
-                <ul class="partnersList">
+                <ul class="partnersList" id="partners">
                     <li class="partnersListItem"><img src="assets/facebook_logo.png" alt="" class="partnersLogo"></li>
                     <li class="partnersListItem"><img src="assets/dribble_logo.png" alt="" class="partnersLogo"></li>
                     <li class="partnersListItem"><img src="assets/youtube_logo.png" alt="" class="partnersLogo"></li>
@@ -77,7 +87,7 @@
                     <li class="partnersListItem"><img src="assets/google_logo.png" alt="" class="partnersLogo"></li>
                     <li class="partnersListItem"><img src="assets/slack_logo.png" alt="" class="partnersLogo"></li>
                 </ul>
-                <div class="escrow">
+                <div class="escrow" id="feature">
                     <div class="escrowContentWrap">
                         <h1 class="escrowHeading">Secure your money with Escrow.</h1>
                         <p class="escrowDescription">Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
@@ -87,7 +97,7 @@
                     <img class="phoneMockup tablet" src="assets/phone_mockup_tablet.png" alt="">
                     <img class="phoneMockup mobile" src="assets/phone_mockup_mobile.png" alt="">
                 </div>
-                <div class="editor">
+                <div class="editor" id="product">
                     <div class="editorContentWrap">
                         <h1 class="editorHeading">A text editor like no other.</h1>
                         <p class="editorDescription">Our text editor pulls you into focus mode with it's simplistic design and usability so you can put out your best writings.</p>
@@ -98,7 +108,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <section class="container footerMainWrap">
             <section class="footerDetailWrap">
                 <h4 class="footerDetailHeading">spense.</h4>
@@ -126,5 +136,27 @@
             </ul>
         </section>
     </footer>
+    <script>
+        let button = document.getElementById('menu');
+        let list = document.getElementById('mobileNavList');
+        let barWrap = document.getElementsByClassName('svg-menu-toggle');
+        window.addEventListener('click', function(e) {
+            if(e.target === button || e.target === list || e.target === barWrap || e.target.classList.contains('line')) return;
+            button.classList.remove('opened');
+            list.classList.remove('opened');
+        }, false);
+        button.addEventListener('click', function() {
+            if (button.classList.contains('opened')) {
+                button.classList.remove('opened');
+                list.classList.remove('opened');
+                button.setAttribute( 'aria-expanded', 'false' );
+            } else {
+                button.classList.add('opened');
+                list.classList.add('opened');
+                button.setAttribute( 'aria-expanded', 'true' );
+            }
+        }, true);
+        
+    </script>
 </body>
 </html>
